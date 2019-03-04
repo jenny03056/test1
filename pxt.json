@@ -1,7 +1,7 @@
 {
-    "name": "MiniPOW",
+    "name": "Q-ter",
     "version": "1.0.0",
-    "description": "Extension for MiniPOW Robot by Mason E&D",
+    "description": "Extension for Q-ter Robot by Mason E&D",
     "license": "GPL", 
     "dependencies": {
         "core": "*"
