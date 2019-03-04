@@ -171,7 +171,8 @@ namespace MiniPOW {
                     y = aa[0] + 90+dd[0]+Math.idiv(dd[1] * (il + 1) , count)
                    basic.pause(10)
                 }
-            for (let ml = 1; ml <= m_step - 2; ml++) {
+            if (m_step >= 4) {
+               for (let ml = 1; ml <= m_step - 3; ml++) {
                 for (let il = 0; il <= count - 1; il++) {
                     tmp_cnt = ml + 1
                     c = aa[0] + 90+aa[ml] + Math.idiv((aa[tmp_cnt] - aa[ml]) * (il + 1) , count)
@@ -183,7 +184,14 @@ namespace MiniPOW {
                     y = aa[0] + 90+dd[ml]+Math.idiv((dd[tmp_cnt] - dd[ml]) * (il + 1) , count)
                     basic.pause(10)
                 }
+              }
             }
+                    c = aa[0] + 90+aa[m_step - 2] 
+                    b = aa[0] + 90+bb[m_step - 2]
+                    a = aa[0] + 90+cc[m_step - 2] 
+                    s90(3,c)
+                    s90(1,b)
+                    s90(0,a)                
         }	 
               run_s = 0
       }
