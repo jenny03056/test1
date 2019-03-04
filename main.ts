@@ -157,7 +157,38 @@ namespace MiniPOW {
       }
    }
   
-  
+   function srun(aa: number[], bb: number[],cc: number[],dd: number[],ll: number): void {
+      if (run_s == 0) {
+        run_s = 1        
+        for (let i = 0; i < ll; i++) {
+                for (let il = 0; il <= count - 1; il++) {
+                    c = aa[0] + 90+Math.idiv(aa[1] * (il + 1) , count)
+                    b = aa[0] + 90+bb[0]+Math.idiv((bb[1]-bb[0]) * (il + 1) , count)
+                    a = aa[0] + 90+cc[0]+Math.idiv((cc[1]-cc[0]) * (il + 1) , count)
+                    s90(3,c)
+                    s90(1,b)
+                    s90(0,a)
+                    y = aa[0] + 90+dd[0]+Math.idiv(dd[1] * (il + 1) , count)
+                   basic.pause(10)
+                }
+            for (let ml = 1; ml <= m_step - 3; ml++) {
+                for (let il = 0; il <= count - 1; il++) {
+                    tmp_cnt = ml + 1
+                    c = aa[0] + 90+aa[ml] + Math.idiv((aa[tmp_cnt] - aa[ml]) * (il + 1) , count)
+                    b = aa[0] + 90+bb[ml] + Math.idiv((bb[tmp_cnt] - bb[ml]) * (il + 1) , count)
+                    a = aa[0] + 90+cc[ml] + Math.idiv((cc[tmp_cnt] - cc[ml]) * (il + 1) , count)
+                    s90(3,c)
+                    s90(1,b)
+                    s90(0,a)
+                    y = aa[0] + 90+dd[ml]+Math.idiv((dd[tmp_cnt] - dd[ml]) * (il + 1) , count)
+                    basic.pause(10)
+                }
+            }
+        }	 
+              run_s = 0
+      }
+   }
+ 
    /**
      * Start animation
      */
@@ -336,7 +367,7 @@ basic.showLeds(`
         }
 
         m_step = pa.length
-        mrun(pa,pb,pc,pb,1)  
+        srun(pa,pb,pc,pb,1)  
      }        
 
 }
