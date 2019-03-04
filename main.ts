@@ -357,13 +357,13 @@ basic.showLeds(`
   export function user_motion(speed: snum, pa:number[], pb:number[], pc:number[]): void {
 
         if (speed == snum.Fast) {
-          count = 10;
-        } else if (speed == snum.Middle) {
-          count = 20;
-        } else if (speed == snum.Slow) {
-          count = 30;
-        } else {
           count = 5;
+        } else if (speed == snum.Middle) {
+          count = 10;
+        } else if (speed == snum.Slow) {
+          count = 15;
+        } else {
+          count = 7;
         }
 
         m_step = pa.length
