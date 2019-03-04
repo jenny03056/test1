@@ -1,7 +1,7 @@
 ![image](Shiun_robot_icon.png)
    
-# MiniPOW Robot (Micro:bit Biped robot, Model : Shiun)
-Using Micro:bit + MiniPlan MiniPOW board(Micro:bit power extension board) to control the Shiun Robot
+# Q-ter Robot (Micro:bit Biped robot)
+Using Micro:bit + MiniPlan MiniPOW board(Micro:bit power extension board) to control the Q-ter Robot
 
 MiniPlan : https://www.facebook.com/MiniPlanRobot/
 
