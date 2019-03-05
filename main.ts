@@ -1,4 +1,4 @@
-// Using MiniPOW to control the MiniPOW Robot (Shiun)
+// Using Micro:bit + MiniPOW to control the Q-ter Robot
 // Copyright (c) 2019 Mason E&D. Copy-right All Rights Reserved. No commercial use．　
 // FB link : https://www.facebook.com/mason.chen.1420
 //% weight=12 color=#ff8533 icon="\uf2d6" block="Q-ter"
