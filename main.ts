@@ -311,7 +311,7 @@ basic.showLeds(`
     }
             
     /**
-     * Shiun Robot basic motion extension
+     * Q-ter Robot basic motion extension
      */
     //% blockId="motion" block="Default motion - |Speed %speed|Motion %direction"
     //% blockGap=1 weight=80 
